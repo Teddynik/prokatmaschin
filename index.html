@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="login.html">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="marquee">
+            Добро пожаловать в наш прокат автомобилей! Специальные предложения на аренду уже сегодня!
+          </div>
+        <section class="about-us">
+            <h2>О нас</h2>
+            <p>
+                Мы являемся ведущей компанией по прокату автомобилей с более чем 10-летним опытом работы в этой отрасли. 
+                Наша миссия - предоставлять высококачественные транспортные средства по конкурентоспособным ценам. Нужен ли вам автомобиль 
+                для деловой поездки, отпуска или ежедневных поездок на работу у нас есть идеальное транспортное средство для вас.
+            </p>
+            <p>
+                Наш автопарк включает в себя множество моделей, начиная от автомобилей эконом-класса и заканчивая автомобилями класса люкс, это гарантирует, что вы найдете то что 
+                наилучшим образом соответствует вашим потребностям. Все транспортные средства проходят регулярное техническое обслуживание для обеспечения безопасности и комфорта на дороге.
+            </p>
+        </section>
+        <h2>Доступные машины</h2>
+        <section class="cars" id="cars">
+
+            <!-- Car 1 -->
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYWAzTgILLFVta1PnuhwDPx0hIvPgpQyvoJg&s" alt="Toyota Camry">
+                <h3>Toyota Camry</h3>
+                <p>Марка: Toyota</p>
+                <p>Класс: Седан</p>
+                <p>Цена: 10000/день</p>
+                <p>Топливо: Бензин</p>
+                <p>КПП: Автоматическая</p>
+                <button class="book-now"><a href="pay.html">Забронировать</a></button>
+            </div>
+
+            <!-- Car 2 -->
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRavqSsrQGhMfJdtPXzxCw5ChDe35amcmv4Dg&s" alt="BMW X5">
+                <h3>BMW X5</h3>
+                <p>Марка: BMW</p>
+                <p>Класс: Внедорожник</p>
+                <p>Цена: 15000/день</p>
+                <p>Топливо: Дизель</p>
+                <p>КПП: Автоматическая</p>
+                <button class="book-now">Забронировать</button>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgRcnMjv3o_3aJYdAZNcwBli05voeqShevsw&s" alt="Ford Fiesta">
+                <h3>Ford Fiesta</h3>
+                <p>Марка: Ford</p>
+                <p>Тип: Хэтчбэк</p>
+                <p>Цена: 8000/день</p>
+                <p>Топливо: Бензин</p>
+                <p>КПП: Механическая</p>
+                <button class="book-now">Забронировать</button>
+            </div>
+
+            <!-- Car 4 -->
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT825Hxtf8qA_7JmtcwjkBdwXNMWUuMyFLGg&s" alt="Mercedes-Benz E-Class">
+                <h3>Mercedes-Benz E-Class</h3>
+                <p>Марка: Mercedes-Benz</p>
+                <p>Класс: Люкс седан</p>
+                <p>Цена: 20000/день</p>
+                <p>Топливо: Бензин</p>
+                <p>КПП: Автоматическая</p>
+                <button class="book-now">Забронировать</button>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2>Наши услуги</h2>
+            <ul>
+                <li>24/7 Поддержка</li>
+            </ul>
+        </section>
+
+        <section class="contact-us">
+            <h2>Связаться с нами</h2>
+            <ul>
+                <li>Почта: support@carrental.com</li>
+                <li>Телефон: +7 (700) 123-4567</li>
+                <li>Адрес: Car City</li>
+                <li> <div id="chat">
+                    <ul id="messages"></ul>
+                    <form id="form">
+                        <input id="input" autocomplete="off" placeholder="Введите сообщение..." />
+                        <button id="send" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Car Rental Service</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
