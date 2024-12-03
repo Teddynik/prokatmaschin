@@ -90,3 +90,24 @@ window.onclick = function(event) {
 
         // Первоначальная загрузка
         loadMessages();
+        function updateInfo(selectElement, infoDiv) {
+            const selectedOption = selectElement.options[selectElement.selectedIndex];
+            const description = selectedOption.getAttribute('data-description');
+            infoDiv.textContent = description || 'Информация о предмете появится здесь...';
+        }
+        
+        // Установка обработчика события при загрузке страницы
+        window.onload = function() {
+            const select = document.getElementById('item');
+            const infoDiv = document.getElementById('info');
+        
+            // При изменении выбора в списке обновляем информацию
+            select.addEventListener('change', function() {
+                updateInfo(select, infoDiv);
+            });
+        };
+        
+        
+        
+    
+

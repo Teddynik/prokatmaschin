@@ -2,7 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url('https://images.pexels.com/photos/21014/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Путь к вашему изображению */
+    background-size: cover; /* Растянуть изображение, чтобы заполнить экран */
+    background-repeat: no-repeat; /* Избежать повторения */
+    background-attachment: fixed; /* Фон остаётся на месте при прокрутке */
+    background-position: center; /* Центровка изображения */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -89,6 +96,7 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    text-decoration: none;
 }
 
 .book-now:hover {
@@ -100,16 +108,12 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%
 }
 
 
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-}
 .container {
     width: 50%;
     margin: 0 auto;
@@ -165,9 +169,11 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     text-align: center;
     justify-content: space-between;
     gap: 20px;
+    text-decoration: none;
 }
 .button:hover {
     background-color: #218838;
+    text-decoration: none;
 }
 
 /* Стили для модального окна */
@@ -226,3 +232,110 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     0% { transform: translateX(100%); }
     500% { transform: translateX(-100%); }
   }
+  
+select {
+    display: block;
+    width: 90%; /* Задайте ширину 90% от контейнера */
+    max-width: 300px; /* Ограничение максимальной ширины */
+}
+
+.products {
+    padding-left: 20px;
+    display: flex;
+    grid-auto-flow: column; /* Расположение карточек в строку */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Автоматическое количество колонок */
+    gap: 20px; /* Расстояние между карточками */
+    justify-items: center; /* Центровка карточек */
+    margin: 10px; /* Отступы вокруг каждой карточки */ 
+}
+
+.product {
+    gap: 10px;
+    
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Карточка занимает всю ширину своей "ячейки" */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%; /* Ширина изображения равна ширине карточки */
+    height: 150px; /* Фиксированная высота для всех изображений */
+    object-fit: cover; /* Обрезка изображения, сохраняя пропорции */
+    border-radius: 5px; /* Закругление углов (по желанию) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень вокруг изображения (по желанию) */
+}
+
+.login-container {
+    max-width: 90%; /* Ограничиваем ширину до 90% экрана */
+    width: 300px; /* Максимальная фиксированная ширина */
+    margin: 50px auto; /* Центровка по горизонтали и отступ сверху */
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Учитываем padding в ширину */
+}
+
+.login-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    gap: 10px; /* Отступы между элементами формы */
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-form input {
+    width: 100%; /* Поля ввода занимают всю ширину контейнера */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Учитываем padding */
+}
+
+.btn-submit {
+    width: 100%; /* Кнопка растягивается по ширине контейнера */
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Задаём высоту экрана */
+}
